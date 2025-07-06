@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-route-utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prebuild": "npm run test",
+    "prepublishOnly": "npm run build",
+    "dev": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfdev1337/nextjs-route-utils.git"
+  },
+  "keywords": [
+    "nextjs",
+    "routes",
+    "utility",
+    "typescript"
+  ],
+  "author": "Wolf Developer",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
