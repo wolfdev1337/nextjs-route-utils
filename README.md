@@ -34,3 +34,19 @@ npm install nextjs-route-utils
 # or
 yarn add nextjs-route-utils
 ```
+
+## Examples
+
+More examples in the test file
+
+```typescript
+const user = createRoute<{ userId: string }>("/users/:userId");
+user({ userId: "abc" }); // /users/abc
+```
+
+```typescript
+const post = createRoute<{ userId: string; postId: number }>(
+  "/users/:userId/posts/:postId"
+);
+post({ userId: "john", postId: 42 }); // /users/john/posts/42
+```
